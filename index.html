@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Time Drive Calculator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+        <link href="index.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sprawdź czy musisz przyspieszyć aby dojechać do celu na czas</h1>
+            <form action="" method="get" id="questions">
+                <div class="questions__div">
+                    <label for="speed" id="speed__label">Podaj prędkość z jaką jedzisz:</label>
+                    <input type="number" id="speed" name="speed">
+                </div>
+                <div class="questions__div">
+                    <label for="houer" id="houer__label">Godzina na którą chcesz dojechać:</label>
+                    <input type="datetime-local" id="houer" name="houer">
+                </div>
+                <div class="questions__div questions__div--units">
+                    <label id="unit__label">Wybierz jednostkę prędkości:</label>
+                    <input type="radio" id="km" name="unit">
+                    <label for="kmh">km/h</label>
+                    <input type="radio" id="mil" name="unit">
+                    <label for="mph">m/h</label>
+                </div>
+                <div class="questions__div questions__div--kmh">
+                    <label for="kmh" id="kmh__label">Ilość kilometrów do przejechania:</label>
+                    <input type="number" id="kmh" name="kmh">
+                </div>
+                <div class="questions__div questions__div--mph">
+                    <label for="mph" id="mph__label">Ilość mil do przejechania:</label>
+                    <input type="number" id="mph" name="mph">
+                </div>
+                <input type="submit" value="Sprawdź" id="send">  
+            </form>
+            <div class="answer"></div>
+        </div>
+    </body>
+</html>
