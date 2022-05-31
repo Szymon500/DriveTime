@@ -57,4 +57,73 @@ div.container{
     font-weight: bold;
     border: 5px solid var(--alert-color);
     border-radius: 5px;
-} 
+}
+/* 
+  Device = Tablets, Ipads
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    div.container{
+        padding: 30px;
+        width: 80%;
+    }
+    #send{
+        width: 150px;
+        height: 50px;
+        font-size: 1.2em;
+        margin:40px 0 40px 170px;
+    }
+    h1{
+        font-size: 1.3em;
+    }
+    label{
+        font-size: 0.9em;
+    }
+    #unit__label{
+        margin-right: 105px;
+    }
+    .active{
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 3px solid var(--alert-color);
+        border-radius: 5px;
+    }
+  }
+/* 
+  ##Device = Smartphones
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+    div.container{
+        padding: 10px;
+        width: 90%;
+   }
+   #send{
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+    margin:40px 0 40px 130px;
+    }
+    h1{
+        font-size: 1em;
+    }
+    label{
+        font-size: 0.7em;
+    }
+    .questions__div{
+        display: grid;
+        grid-template-columns: 220px 140px;
+        margin-top: 20px;
+    }
+    #mil,#km{
+        margin:0 2px;
+    }
+    .questions__div--units{
+        display: block;
+    }
+    .active{
+        font-size: 0.9em;
+        font-weight: bold;
+        border: 2px solid var(--alert-color);
+        border-radius: 5px;
+    }
+}
